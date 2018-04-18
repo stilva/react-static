@@ -14,7 +14,7 @@ export function pathJoin (...paths) {
 
 export function cleanPath (path) {
   // Resolve the local path
-  if (!path) {
+  if (!path || path === "/") {
     return path
   }
   // Remove origin, hashes, and query params
