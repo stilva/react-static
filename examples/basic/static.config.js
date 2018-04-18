@@ -10,6 +10,9 @@ export default {
       {
         path: '/',
         component: 'src/containers/Home',
+        getData: () => ({
+          lastUpdate: Date.now()
+        }),
       },
       {
         path: '/about',
